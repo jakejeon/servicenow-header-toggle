@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "ServiceNow Learning Full View",
+  "version": "1.0.0",
+  "description": "Toggle the ServiceNow Learning header to reclaim screen space for course content.",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": ["https://learning.servicenow.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://learning.servicenow.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "_execute_action": {
+      "description": "Open the extension popup"
+    },
+    "toggle-header": {
+      "suggested_key": {
+        "default": "Alt+H"
+      },
+      "description": "Toggle the ServiceNow header on/off"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "ServiceNow Learning Full View"
+  }
+}

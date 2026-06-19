@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup">
+    <!-- Branding -->
+    <div class="brand">
+      <span class="brand-icon">&#x1F4DA;</span>
+      <div>
+        <h1 class="brand-title">Header Toggle</h1>
+        <p class="brand-sub">ServiceNow Learning</p>
+      </div>
+    </div>
+
+    <!-- Status pill -->
+    <div class="status-bar">
+      <span class="status-label">Header</span>
+      <span id="statusPill" class="pill pill-visible">Visible</span>
+    </div>
+
+    <!-- Action button -->
+    <button id="toggleBtn" class="btn btn-hide">
+      <span id="btnIcon" class="btn-icon">&#x1F648;</span>
+      <span id="btnText">Hide Header</span>
+    </button>
+
+    <!-- Footer hint -->
+    <p class="hint">
+      Works only on <code>learning.servicenow.com</code>
+    </p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
