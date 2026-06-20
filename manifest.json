@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "ServiceNow Learning Full View",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Toggle the ServiceNow Learning header to reclaim screen space for course content.",
   "permissions": ["activeTab", "storage"],
   "host_permissions": ["https://learning.servicenow.com/*"],

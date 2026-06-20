@@ -9,7 +9,7 @@
   'use strict';
 
   var HEADER_SELECTOR = 'header.sn-cx-navigation';
-  var CONTENT_SELECTOR = 'div.content-main-container.panel-side.content-type-on_demand';
+  var CONTENT_SELECTOR = 'div.content-main-container';
 
   var hidden = false;
 
@@ -49,7 +49,7 @@
       header.style.setProperty('display', 'none', 'important');
     }
     if (content) {
-      content.style.setProperty('height', '100%', 'important');
+      content.style.setProperty('height', '100vh', 'important');
     }
     hidden = true;
   }
